@@ -28,7 +28,7 @@
 	{{ $useFontAwesome := $.Params.education.useFontAwesome | default $.Params.useFontAwesome }}
 	{{ $noExternalIcon := not ($.Params.education.externalLinkIcon | default $.Params.externalLinkIcon) }}
 
-	<span>{{ .date }}{{ if .gpa }} | GPA: {{ .gpa }}{{ end }}</span>
+	<span>{{ .date }}{{ if .grade }} | Grade: {{ .grade }}{{ end }}</span>
 	{{- if .more -}}
 		{{- if .link -}}
 			{{- if $useFontAwesome -}}
